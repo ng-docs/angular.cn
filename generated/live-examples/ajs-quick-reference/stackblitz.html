@@ -1,0 +1,1150 @@
+<html lang="en"><head></head><body>
+        <form id="mainForm" method="post" action="https://stackblitz.com/run?file=src/app/app.component.html" target="_self"><input type="hidden" name="project[files][angular.json]" value="{
+  &quot;$schema&quot;: &quot;./node_modules/@angular/cli/lib/config/schema.json&quot;,
+  &quot;version&quot;: 1,
+  &quot;newProjectRoot&quot;: &quot;projects&quot;,
+  &quot;projects&quot;: {
+    &quot;angular.io-example&quot;: {
+      &quot;projectType&quot;: &quot;application&quot;,
+      &quot;root&quot;: &quot;&quot;,
+      &quot;sourceRoot&quot;: &quot;src&quot;,
+      &quot;prefix&quot;: &quot;app&quot;,
+      &quot;architect&quot;: {
+        &quot;build&quot;: {
+          &quot;builder&quot;: &quot;@angular-devkit/build-angular:browser&quot;,
+          &quot;options&quot;: {
+            &quot;outputPath&quot;: &quot;dist&quot;,
+            &quot;index&quot;: &quot;src/index.html&quot;,
+            &quot;main&quot;: &quot;src/main.ts&quot;,
+            &quot;polyfills&quot;: [&quot;zone.js&quot;],
+            &quot;tsConfig&quot;: &quot;tsconfig.app.json&quot;,
+            &quot;assets&quot;: [
+              &quot;src/favicon.ico&quot;,
+              &quot;src/assets&quot;
+            ],
+            &quot;styles&quot;: [
+              &quot;src/styles.css&quot;
+            ],
+            &quot;scripts&quot;: []
+          },
+          &quot;configurations&quot;: {
+            &quot;production&quot;: {
+              &quot;budgets&quot;: [
+                {
+                  &quot;type&quot;: &quot;initial&quot;,
+                  &quot;maximumWarning&quot;: &quot;500kb&quot;,
+                  &quot;maximumError&quot;: &quot;1mb&quot;
+                },
+                {
+                  &quot;type&quot;: &quot;anyComponentStyle&quot;,
+                  &quot;maximumWarning&quot;: &quot;2kb&quot;,
+                  &quot;maximumError&quot;: &quot;4kb&quot;
+                }
+              ],
+              &quot;outputHashing&quot;: &quot;all&quot;
+            },
+            &quot;development&quot;: {
+              &quot;buildOptimizer&quot;: false,
+              &quot;optimization&quot;: false,
+              &quot;vendorChunk&quot;: true,
+              &quot;extractLicenses&quot;: false,
+              &quot;sourceMap&quot;: true,
+              &quot;namedChunks&quot;: true
+            }
+          },
+          &quot;defaultConfiguration&quot;: &quot;production&quot;
+        },
+        &quot;serve&quot;: {
+          &quot;builder&quot;: &quot;@angular-devkit/build-angular:dev-server&quot;,
+          &quot;configurations&quot;: {
+            &quot;production&quot;: {
+              &quot;browserTarget&quot;: &quot;angular.io-example:build:production&quot;
+            },
+            &quot;development&quot;: {
+              &quot;browserTarget&quot;: &quot;angular.io-example:build:development&quot;
+            }
+          },
+          &quot;defaultConfiguration&quot;: &quot;development&quot;
+        },
+        &quot;extract-i18n&quot;: {
+          &quot;builder&quot;: &quot;@angular-devkit/build-angular:extract-i18n&quot;,
+          &quot;options&quot;: {
+            &quot;browserTarget&quot;: &quot;angular.io-example:build&quot;
+          }
+        },
+        &quot;test&quot;: {
+          &quot;builder&quot;: &quot;@angular-devkit/build-angular:karma&quot;,
+          &quot;options&quot;: {
+            &quot;polyfills&quot;: [&quot;zone.js&quot;, &quot;zone.js/testing&quot;],
+            &quot;tsConfig&quot;: &quot;tsconfig.spec.json&quot;,
+            &quot;assets&quot;: [
+              &quot;src/favicon.ico&quot;,
+              &quot;src/assets&quot;
+            ],
+            &quot;styles&quot;: [
+              &quot;src/styles.css&quot;
+            ],
+            &quot;scripts&quot;: []
+          }
+        },
+        &quot;e2e&quot;: {
+          &quot;builder&quot;: &quot;@angular-devkit/build-angular:protractor&quot;,
+          &quot;options&quot;: {
+            &quot;protractorConfig&quot;: &quot;e2e/protractor.conf.js&quot;,
+            &quot;devServerTarget&quot;: &quot;angular.io-example:serve&quot;
+          },
+          &quot;configurations&quot;: {
+            &quot;production&quot;: {
+              &quot;devServerTarget&quot;: &quot;angular.io-example:serve:production&quot;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+"><input type="hidden" name="project[files][package.json]" value="{
+  &quot;name&quot;: &quot;angular.io-example&quot;,
+  &quot;version&quot;: &quot;0.0.0&quot;,
+  &quot;description&quot;: &quot;Example project from an angular.io guide.&quot;,
+  &quot;license&quot;: &quot;MIT&quot;,
+  &quot;scripts&quot;: {
+    &quot;ng&quot;: &quot;ng&quot;,
+    &quot;start&quot;: &quot;ng serve&quot;,
+    &quot;build&quot;: &quot;ng build&quot;,
+    &quot;watch&quot;: &quot;ng build --watch --configuration development&quot;,
+    &quot;test&quot;: &quot;ng test&quot;,
+    &quot;e2e&quot;: &quot;ng e2e&quot;
+  },
+  &quot;private&quot;: true,
+  &quot;dependencies&quot;: {
+    &quot;@angular/animations&quot;: &quot;^16.0.0&quot;,
+    &quot;@angular/common&quot;: &quot;^16.0.0&quot;,
+    &quot;@angular/compiler&quot;: &quot;^16.0.0&quot;,
+    &quot;@angular/core&quot;: &quot;^16.0.0&quot;,
+    &quot;@angular/forms&quot;: &quot;^16.0.0&quot;,
+    &quot;@angular/platform-browser&quot;: &quot;^16.0.0&quot;,
+    &quot;@angular/platform-browser-dynamic&quot;: &quot;^16.0.0&quot;,
+    &quot;@angular/router&quot;: &quot;^16.0.0&quot;,
+    &quot;angular-in-memory-web-api&quot;: &quot;~0.16.0&quot;,
+    &quot;rxjs&quot;: &quot;~7.8.0&quot;,
+    &quot;tslib&quot;: &quot;^2.3.0&quot;,
+    &quot;zone.js&quot;: &quot;~0.13.0&quot;
+  },
+  &quot;devDependencies&quot;: {
+    &quot;@angular-devkit/build-angular&quot;: &quot;^16.0.0&quot;,
+    &quot;@angular/cli&quot;: &quot;^16.0.0&quot;,
+    &quot;@angular/compiler-cli&quot;: &quot;^16.0.0&quot;,
+    &quot;@types/jasmine&quot;: &quot;~4.3.0&quot;,
+    &quot;@types/node&quot;: &quot;^16.11.35&quot;,
+    &quot;copyfiles&quot;: &quot;^2.4.1&quot;,
+    &quot;jasmine-core&quot;: &quot;~4.6.0&quot;,
+    &quot;jasmine-marbles&quot;: &quot;~0.9.2&quot;,
+    &quot;jasmine-spec-reporter&quot;: &quot;~7.0.0&quot;,
+    &quot;karma&quot;: &quot;~6.4.0&quot;,
+    &quot;karma-chrome-launcher&quot;: &quot;~3.2.0&quot;,
+    &quot;karma-coverage&quot;: &quot;~2.2.0&quot;,
+    &quot;karma-jasmine&quot;: &quot;~5.1.0&quot;,
+    &quot;karma-jasmine-html-reporter&quot;: &quot;~2.0.0&quot;,
+    &quot;protractor&quot;: &quot;~7.0.0&quot;,
+    &quot;ts-node&quot;: &quot;~10.9.0&quot;,
+    &quot;typescript&quot;: &quot;~4.9.3&quot;
+  }
+}
+"><input type="hidden" name="project[files][tsconfig.app.json]" value="/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  &quot;extends&quot;: &quot;./tsconfig.json&quot;,
+  &quot;compilerOptions&quot;: {
+    &quot;outDir&quot;: &quot;./out-tsc/app&quot;,
+    &quot;types&quot;: []
+  },
+  &quot;files&quot;: [
+    &quot;src/main.ts&quot;
+  ],
+  &quot;include&quot;: [
+    &quot;src/**/*.d.ts&quot;
+  ],
+  &quot;exclude&quot;: [
+    &quot;src/test.ts&quot;,
+    &quot;src/**/*.spec.ts&quot;,
+    &quot;src/**/*-specs.ts&quot;,
+    &quot;src/**/*.avoid.ts&quot;,
+    &quot;src/**/*.0.ts&quot;,
+    &quot;src/**/*.1.ts&quot;,
+    &quot;src/**/*.1b.ts&quot;,
+    &quot;src/**/*.2.ts&quot;,
+    &quot;src/**/*.3.ts&quot;,
+    &quot;src/**/*.4.ts&quot;,
+    &quot;src/**/*.5.ts&quot;,
+    &quot;src/**/*.6.ts&quot;,
+    &quot;src/**/*.7.ts&quot;,
+    &quot;src/**/testing&quot;
+  ]
+}
+"><input type="hidden" name="project[files][tsconfig.json]" value="/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  &quot;compileOnSave&quot;: false,
+  &quot;compilerOptions&quot;: {
+    &quot;baseUrl&quot;: &quot;./&quot;,
+    &quot;outDir&quot;: &quot;./dist/out-tsc&quot;,
+    &quot;forceConsistentCasingInFileNames&quot;: true,
+    &quot;strict&quot;: true,
+    &quot;noImplicitOverride&quot;: true,
+    &quot;noPropertyAccessFromIndexSignature&quot;: true,
+    &quot;noImplicitReturns&quot;: true,
+    &quot;noFallthroughCasesInSwitch&quot;: true,
+    &quot;sourceMap&quot;: true,
+    &quot;declaration&quot;: false,
+    &quot;downlevelIteration&quot;: true,
+    &quot;experimentalDecorators&quot;: true,
+    &quot;moduleResolution&quot;: &quot;node&quot;,
+    &quot;importHelpers&quot;: true,
+    &quot;useDefineForClassFields&quot;: false,
+    &quot;target&quot;: &quot;ES2022&quot;,
+    &quot;module&quot;: &quot;ES2022&quot;,
+    &quot;lib&quot;: [
+      &quot;ES2022&quot;,
+      &quot;dom&quot;
+    ]
+  },
+  &quot;angularCompilerOptions&quot;: {
+    &quot;enableI18nLegacyMessageIdFormat&quot;: false,
+    &quot;strictInjectionParameters&quot;: true,
+    &quot;strictInputAccessModifiers&quot;: true,
+    &quot;strictTemplates&quot;: true
+  }
+}
+"><input type="hidden" name="project[files][src/index.html]" value="<!DOCTYPE html>
+<html lang=&quot;en&quot;>
+  <head>
+    <base href=&quot;/&quot;>
+    <meta charset=&quot;UTF-8&quot;>
+    <title>AngularJS to Angular Quick Reference</title>
+    <meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;>
+  </head>
+
+  <body>
+    <app-root></app-root>
+  </body>
+
+</html>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->"><input type="hidden" name="project[files][src/main.ts]" value="import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+import { AppModule } from './app/app.module';
+
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error(err));
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/"><input type="hidden" name="project[files][src/styles.css]" value="/* Global Styles */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  color: #264D73;
+  font-size: 2.5rem;
+}
+h2, h3 {
+  color: #444;
+  font-weight: lighter;
+}
+h3 {
+  font-size: 1.3rem;
+}
+body {
+  padding: .5rem;
+  max-width: 1000px;
+  margin: auto;
+}
+@media (min-width: 600px) {
+  body {
+    padding: 2rem;
+  }
+}
+body, input[text] {
+  color: #333;
+  font-family: Cambria, Georgia, serif;
+}
+a {
+  cursor: pointer;
+}
+button {
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+
+/* Navigation link styles */
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #e8e8e8;
+  color: #3d3d3d;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  color: white;
+  background-color:  #42545C;
+}
+nav a.active {
+  background-color: black;
+  color: white;
+}
+hr {
+  margin: 1.5rem 0;
+}
+input[type=&quot;text&quot;] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: .5rem;
+}
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/"><input type="hidden" name="project[files][src/app/app-routing.module.ts]" value="import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+import { MovieListComponent } from './movie-list.component';
+
+const routes: Routes = [
+  { path: '', redirectTo: '/movies', pathMatch: 'full' },
+  { path: 'movies', component: MovieListComponent }
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {}
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/"><input type="hidden" name="project[files][src/app/app.component.css]" value=".active {font-style: italic;}
+.shazam {font-weight: bold;}
+
+img {height: 100px;}
+
+table td {
+  padding: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/"><input type="hidden" name="project[files][src/app/app.component.html]" value="<h1>{{title}}</h1>
+
+<h3>Routed Movies</h3>
+<nav>
+  <a [routerLink]=&quot;['/movies']&quot;>Movies</a>
+</nav>
+<router-outlet></router-outlet>
+
+<hr>
+
+<h1>Example Snippets</h1>
+
+<div [ngClass]=&quot;{'active': isActive}&quot;>
+  [ngClass] active
+</div>
+<div [ngClass]=&quot;{'active': isActive,
+                 'shazam': isImportant}&quot;>
+  [ngClass] active and boldly important
+</div>
+<div [class.active]=&quot;isActive&quot;>
+  [class.active]
+</div>
+
+<p></p>
+<a [href]=&quot;angularDocsUrl&quot;>Angular Docs</a>
+
+<p></p>
+<div>
+  <button type=&quot;button&quot; (click)=&quot;toggleImage()&quot;>
+  Image Toggle #1</button>
+  <button type=&quot;button&quot; (click)=&quot;toggleImage($event)&quot;>
+  Image Toggle #2</button>
+  <p>Image toggle event type was {{eventType}}</p>
+</div>
+
+<p></p>
+<div *ngIf=&quot;showImage&quot;>
+  <img [src]=&quot;movie.imageurl&quot; [alt]=&quot;movie.title&quot;>
+</div>
+
+<p></p>
+<div [ngStyle]=&quot;{'color': colorPreference}&quot;>
+  color preference #1
+</div>
+<div [style.color]=&quot;colorPreference&quot;>
+  color preference #2
+</div>
+
+<h3>Movie as JSON</h3>
+<pre>{{movie | json}}</pre>
+
+<h3>Movie Titles via local variable</h3>
+<table>
+<tr *ngFor=&quot;let movie of movies&quot;>
+  <td>{{movie.title}}</td>
+</tr>
+</table>
+
+<h3>Sliced Movies with pipes</h3>
+<table>
+<tr *ngFor=&quot;let movie of movies | slice:0:2&quot;>
+
+  <td>{{movie.title | uppercase}}</td>
+
+  <td>{{movie.title | lowercase}}</td>
+
+  <td>{{movie.releaseDate | date}}</td>
+
+  <td>{{movie.price | currency:'USD':true}}</td>
+
+  <td>{{movie.starRating | number}}</td>
+  <td>{{movie.starRating | number:'1.1-2'}}</td>
+  <td>{{movie.approvalRating | percent: '1.0-2'}}</td>
+
+</tr></table>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->"><input type="hidden" name="project[files][src/app/app.component.ts]" value="import { Component } from '@angular/core';
+
+import { MovieService } from './movie.service';
+import { IMovie } from './movie';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: [ './app.component.css' ],
+  providers: [ MovieService ]
+})
+export class AppComponent {
+
+  angularDocsUrl = 'https://angular.io/';
+  colorPreference = 'red';
+  eventType = '<not clicked yet>';
+  isActive = true;
+  isImportant = true;
+  movie: IMovie;
+  movies: IMovie[] = [];
+  showImage = true;
+  title = 'AngularJS to Angular Quick Ref Cookbook';
+  toggleImage(event?: UIEvent) {
+    this.showImage = !this.showImage;
+    this.eventType = (event &amp;&amp; event.type) || 'not provided';
+  }
+
+  constructor(movieService: MovieService) {
+    this.movies = movieService.getMovies();
+    this.movie = this.movies[0];
+  }
+}
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/"><input type="hidden" name="project[files][src/app/app.module.ts]" value="import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { AppComponent } from './app.component';
+import { MovieListComponent } from './movie-list.component';
+import { AppRoutingModule } from './app-routing.module';
+
+@NgModule({
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule
+  ],
+  declarations: [
+    AppComponent,
+    MovieListComponent
+  ],
+  bootstrap: [ AppComponent ]
+})
+export class AppModule { }
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/"><input type="hidden" name="project[files][src/app/movie-list.component.css]" value="div {
+  font-family:Arial, Helvetica, sans-serif;
+  margin:20px;
+}
+
+table {
+  font-family:Arial, Helvetica, sans-serif;
+  color:#666;
+  font-size:14px;
+  text-shadow: 1px 1px 0 #fff;
+  margin:20px;
+  border:#ccc 1px solid;
+
+  border-radius:3px;
+}
+table th {
+  padding:21px 25px 22px 25px;
+  border-top:1px solid #fafafa;
+  border-bottom:1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  font-weight: bold;
+}
+table th:first-child {
+  text-align: left;
+  padding-left:20px;
+  border-left: 0;
+}
+table tr {
+  text-align: center;
+  padding-left:20px;
+}
+table td:first-child {
+  text-align: left;
+  padding-left:20px;
+  border-left: 0;
+}
+table td {
+  padding:18px;
+  border-top: 1px solid #ffffff;
+  border-bottom:1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+}
+table tr:last-child td {
+  border-bottom:0;
+}
+table tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+table tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/"><input type="hidden" name="project[files][src/app/movie-list.component.html]" value="<!-- Filter the Movie Title   -->
+<div>
+  <h2>Movie List</h2>
+  <div>Who is your favorite hero?</div>
+  <div>
+    <input [(ngModel)]=&quot;favoriteHero&quot; />
+
+    <span [ngSwitch]=&quot;favoriteHero &amp;&amp;
+                   checkMovieHero(favoriteHero)&quot;>
+      <p *ngSwitchCase=&quot;true&quot;>
+        Excellent choice!
+      </p>
+      <p *ngSwitchCase=&quot;false&quot;>
+        No movie, sorry!
+      </p>
+      <p *ngSwitchDefault>
+        Please enter your favorite hero.
+      </p>
+    </span>
+  </div>
+</div>
+
+<h3 [hidden]=&quot;!favoriteHero&quot;>
+  Your favorite hero is: {{favoriteHero}}
+</h3>
+
+<div>
+  <table *ngIf=&quot;movies.length&quot;>
+    <thead>
+      <tr>
+        <th>
+          <button type=&quot;button&quot; (click)=&quot;toggleImage()&quot;>
+            {{showImage ? &quot;Hide&quot; : &quot;Show&quot;}} Poster
+          </button>
+        </th>
+        <th>Title</th>
+        <th>Hero</th>
+        <th>Release Date</th>
+        <th>Rating</th>
+        <th>Price</th>
+        <th>Star rating</th>
+        <th>Approval rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor=&quot;let movie of movies&quot;>
+        <td>
+          <img [hidden]=&quot;!showImage || !movie.imageurl&quot;
+                [style.height.px]=&quot;50&quot;
+                [style.margin.px]=&quot;2&quot;
+                [src]=&quot;movie.imageurl&quot;
+                [alt]=&quot;movie.title&quot;
+                [title]=&quot;movie.title&quot;>
+        </td>
+        <td>{{movie.title}}</td>
+        <td>{{movie.hero}}</td>
+        <td>{{movie.releaseDate | date}}</td>
+        <td>{{movie.mpaa | uppercase}}</td>
+        <td>{{movie.price | currency:'USD':true}}</td>
+        <td>{{movie.starRating | number:'1.1-2'}}</td>
+        <td>{{movie.approvalRating | percent: '1.0-0'}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->"><input type="hidden" name="project[files][src/app/movie-list.component.ts]" value="import { Component } from '@angular/core';
+import { IMovie } from './movie';
+import { MovieService } from './movie.service';
+
+@Component({
+  selector: 'app-movie-list',
+  templateUrl: './movie-list.component.html',
+  styleUrls: [ './movie-list.component.css' ],
+})
+export class MovieListComponent {
+  favoriteHero: string | undefined;
+  showImage = false;
+  movies: IMovie[];
+
+  constructor(movieService: MovieService) {
+    this.movies = movieService.getMovies();
+  }
+
+  toggleImage(): void {
+    this.showImage = !this.showImage;
+  }
+
+  checkMovieHero(value: string): boolean {
+    return this.movies.filter(movie => movie.hero === value).length > 0 ;
+  }
+}
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/"><input type="hidden" name="project[files][src/app/movie.service.ts]" value="import { Injectable } from '@angular/core';
+
+import { IMovie } from './movie';
+
+@Injectable()
+export class MovieService {
+  getMovies(): IMovie[] {
+    return [
+      {
+        hero: 'Celeritas',
+        imageurl: 'assets/images/hero.svg',
+        movieId: 1,
+        mpaa: 'pg-13',
+        releaseDate: '2015-12-19T00:00:00',
+        title: 'Celeritas Reigns',
+        price: 12.95,
+        starRating: 4.925,
+        approvalRating: .97
+      },
+      {
+        hero: 'Dr Nice',
+        imageurl: 'assets/images/villain.svg',
+        movieId: 2,
+        mpaa: 'pg-13',
+        releaseDate: '2015-12-18T00:00:00',
+        title: 'No More Dr Nice',
+        price: 14.95,
+        starRating: 4.6,
+        approvalRating: .94
+      },
+      {
+        hero: 'Angular',
+        imageurl: 'assets/images/ng-logo.svg',
+        movieId: 3,
+        mpaa: 'pg-13',
+        releaseDate: '2015-12-17T00:00:00',
+        title: 'Angular to the Rescue',
+        price: 15.95,
+        starRating: 4.98,
+        approvalRating: .9995
+      }
+    ];
+  }
+}
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/"><input type="hidden" name="project[files][src/app/movie.ts]" value="/* Defines the movie entity */
+export interface IMovie {
+  approvalRating: number;
+  hero: string;
+  imageurl: string;
+  movieId: number;
+  mpaa: string;
+  price: number;
+  releaseDate: string;
+  starRating: number;
+  title: string;
+}
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/"><input type="hidden" name="project[files][src/assets/images/hero.svg]" value="<?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>
+<svg version=&quot;1.1&quot; viewBox=&quot;0 0 267.64 295.96&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;
+  xmlns:cc=&quot;http://creativecommons.org/ns#&quot; xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot;
+  xmlns:rdf=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;>
+  <defs>
+    <filter id=&quot;g&quot; x=&quot;-.6875&quot; y=&quot;-.36871&quot; width=&quot;2.375&quot; height=&quot;1.7374&quot;
+      color-interpolation-filters=&quot;sRGB&quot;>
+      <feGaussianBlur stdDeviation=&quot;9.821428&quot; />
+    </filter>
+    <filter id=&quot;a&quot; x=&quot;-.32323&quot; y=&quot;-.20911&quot; width=&quot;1.6465&quot; height=&quot;1.4182&quot;
+      color-interpolation-filters=&quot;sRGB&quot;>
+      <feGaussianBlur stdDeviation=&quot;6.113183&quot; />
+    </filter>
+    <filter id=&quot;i&quot; x=&quot;-.60711&quot; y=&quot;-.3192&quot; width=&quot;2.2142&quot; height=&quot;1.6384&quot;
+      color-interpolation-filters=&quot;sRGB&quot;>
+      <feGaussianBlur stdDeviation=&quot;2.235874&quot; />
+    </filter>
+    <filter id=&quot;h&quot; x=&quot;-.20228&quot; y=&quot;-.6072&quot; width=&quot;1.4046&quot; height=&quot;2.2144&quot;
+      color-interpolation-filters=&quot;sRGB&quot;>
+      <feGaussianBlur stdDeviation=&quot;2.235874&quot; />
+    </filter>
+    <filter id=&quot;b&quot; x=&quot;-.16212&quot; y=&quot;-.3564&quot; width=&quot;1.3242&quot; height=&quot;1.7128&quot;
+      color-interpolation-filters=&quot;sRGB&quot;>
+      <feGaussianBlur stdDeviation=&quot;6.351255&quot; />
+    </filter>
+    <filter id=&quot;c&quot; x=&quot;-.26311&quot; y=&quot;-.22062&quot; width=&quot;1.5262&quot; height=&quot;1.4412&quot;
+      color-interpolation-filters=&quot;sRGB&quot;>
+      <feGaussianBlur stdDeviation=&quot;1.868782&quot; />
+    </filter>
+    <filter id=&quot;j&quot; x=&quot;-.29184&quot; y=&quot;-.46969&quot; width=&quot;1.5837&quot; height=&quot;1.9394&quot;
+      color-interpolation-filters=&quot;sRGB&quot;>
+      <feGaussianBlur stdDeviation=&quot;6.32608&quot; />
+    </filter>
+    <filter id=&quot;e&quot; x=&quot;-.57354&quot; y=&quot;-1.4081&quot; width=&quot;2.1471&quot; height=&quot;3.8162&quot;
+      color-interpolation-filters=&quot;sRGB&quot;>
+      <feGaussianBlur stdDeviation=&quot;6.182556&quot; />
+    </filter>
+    <filter id=&quot;f&quot; x=&quot;-.2876&quot; y=&quot;-1.4502&quot; width=&quot;1.5752&quot; height=&quot;3.9004&quot;
+      color-interpolation-filters=&quot;sRGB&quot;>
+      <feGaussianBlur stdDeviation=&quot;2.586588&quot; />
+    </filter>
+    <filter id=&quot;d&quot; x=&quot;-.16498&quot; y=&quot;-.36227&quot; width=&quot;1.33&quot; height=&quot;1.7245&quot;
+      color-interpolation-filters=&quot;sRGB&quot;>
+      <feGaussianBlur stdDeviation=&quot;2.252435&quot; />
+    </filter>
+  </defs>
+  <metadata>image/svg+xml <rdf:RDF>
+      <cc:Work rdf:about=&quot;&quot;>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource=&quot;http://purl.org/dc/dcmitype/StillImage&quot; />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g transform=&quot;translate(11.042 -9.5012)&quot;>
+    <title>Layer 1</title>
+    <g>
+      <path
+        d=&quot;m91.945 72.496c27.138 0.30258 57.949 34.887 81.317 0 29.92-34.193 62.363-13.391 82.833 0v80.812c-27.915-2.8567-46.364-29.419-82.507-11.859-42.127 20.468-87.981-29.714-123.56-66.428 24.504 2.919 36.216 1.2694 41.921-2.5254z&quot;
+        stroke=&quot;#000&quot; />
+      <path d=&quot;m74.518 172.69-23.218-7.317-13.861 51.109 21.254 6.4241 15.825-50.216h3.1e-5z&quot;
+        stroke-width=&quot;0&quot; />
+      <path d=&quot;m59.709 215.32-22.38 1.2045-7.4787 74.929 30.058-0.31159-0.19983-75.822-3.1e-5 3e-5z&quot;
+        stroke-width=&quot;0&quot; />
+      <path
+        d=&quot;m62.226 194.75c-4.3262 13.599-11.065 24.104-15.052 23.464-3.9867-0.64052-3.7114-12.184 0.6148-25.783 4.3262-13.599 11.065-24.104 15.052-23.464 3.9867 0.64052 3.7114 12.184-0.61482 25.783l-4e-6 2e-5z&quot;
+        filter=&quot;url(#a)&quot; opacity=&quot;.54808&quot; stroke=&quot;#000&quot; />
+      <path d=&quot;m69.99 173.14 22.807-8.5128 16.391 49.832-20.787 8.0076-18.411-49.327v3e-5z&quot;
+        stroke-width=&quot;0&quot; />
+      <path
+        d=&quot;m41.241 77.574 11.859 10.31-39.133 45.01s-10.562-4.4301-11.24-9.8059c-0.67784-5.3758 38.514-45.515 38.514-45.515h-1.5e-5 -3.1e-5z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m64.067 47.483s4.2083 25.538-11.28 27.021 10.552 23.843 10.552 23.843l19.782 8.2676 33.094-14.913s-7.5285-12.225-10.031-12.562c-2.5028-0.33676-13.448-2.319-16.173-12.369-2.7249-10.05-0.41495-15.854-0.41495-15.854l-25.529-3.4349h-6.1e-5z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m61.325 52.192c5.8849 10.744 25.445 15.003 35.243 5.1137 3.7641-4.1141 2.9136-11.869 2.1797-16.998s-4.1074-5.8897-4.1006-8.0152c7e-3 -2.1255 1.1313-1.8719 0.51407-4.3746-6.2657-27.818-53.688-12.607-40.426 12.625-3.7319 7.1826 0.1217 11.174 6.5897 11.649v3.1e-5z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m62.096 52.409c5.7656 10.526 24.929 14.699 34.529 5.01 3.6878-4.0308 2.8546-11.628 2.1356-16.653s-4.0241-5.7703-4.0175-7.8528c7e-3 -2.0825 1.1083-1.834 0.50366-4.2859-6.1387-27.254-52.6-12.351-39.607 12.369-3.6562 7.037 0.11923 10.948 6.4561 11.413v-3.1e-5z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m63.507 54.818c12.538 13.071 26.191 9.2315 34.417 1.4728-14.553 10.143-25.788 6.1748-34.417-1.4728z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m84.621 30.575s2.7779 14.9 5.8084 14.647c-0.44134 0.17191-6.3155 3.8076-8.8388 1.2627 0.69727-1.2367 3.1921 1.681 5.3688-1.3929 0.81992-1.7809-1.1302-6.0501-2.3384-14.517z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m84.621 30.575s2.7779 14.9 5.8084 14.647c-0.44134 0.17191-6.3155 3.8076-8.8388 1.2627 0.69727-1.2367 3.1921 1.681 5.3688-1.3929 0.81992-1.7809-1.1302-6.0501-2.3384-14.517z&quot;
+        filter=&quot;url(#i)&quot; stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m69.03 37.466c0.14066 1.798 12.691-0.98444 14.467-3.9984 4.3018 0.6434 10.735-0.22946 11.178-1.4225 1.7027-4.5798-4.6747-2.635-11.629-1.0497-6.9547 1.5854-16.541-0.92746-14.284 6.4706l0.26788-3.1e-5h-3.1e-5z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m69.03 37.466c0.14066 1.798 12.691-0.98444 14.467-3.9984 4.3018 0.6434 10.735-0.22946 11.178-1.4225 1.7027-4.5798-4.6747-2.635-11.629-1.0497-6.9547 1.5854-16.541-0.92746-14.284 6.4706l0.26788-3.1e-5h-3.1e-5z&quot;
+        filter=&quot;url(#h)&quot; stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m81.522 32.928c0.84876 1.8448-2.5194 2.5192-5.6442 3.5081-3.1248 0.98904-5.5627 1.8298-5.7602 0.63113-0.53281-3.234 1.5685-3.0128 4.6933-4.0019 3.1248-0.98901 6.4079-1.0954 6.7111-0.13742z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m84.818 32.076c-0.05411 1.7074 2.7767 1.1278 5.5219 0.87174 2.7452-0.2561 4.9095-0.40228 4.6703-1.3958-0.64536-2.6805-2.2014-1.8215-4.9466-1.5654-2.7452 0.2561-5.3242 1.248-5.2457 2.0895l3.1e-5 -6.1e-5z&quot;
+        stroke=&quot;#000&quot; />
+      <path d=&quot;m68.05 34.513s9.1964-4.2857 12.768-3.4821&quot; stroke=&quot;#000&quot; stroke-width=&quot;1px&quot; />
+      <path d=&quot;m84.568 30.674s8.4821-0.625 9.1964-2.7679&quot; stroke=&quot;#000&quot; stroke-width=&quot;1px&quot; />
+      <path
+        d=&quot;m93.883 48.197c1.6163 2.5565-0.35864 6.4995-5.2404 6.2187-4.8401-0.27841-9.5687 0.93256-9.655 0.28659-0.09891-0.741 4.0474-1.0987 8.7613-2.3987 4.7139-1.3 5.2702-4.6136 6.1341-4.1066z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m110.66 80.232-12.591 9.4031 35.689 47.787s10.861-3.6351 11.936-8.9458c1.0744-5.3107-35.034-48.244-35.034-48.244h3e-5z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m2.4678 124.59c1.517-10.859 11.535-8.3905 11.535-8.3905l23.973 43.264-3.7433 5.6921s-33.281-29.707-31.764-40.566z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m22.743 116.29c-8.5536 7.5969-16.55 12.56-17.859 11.085-1.3098-1.4748 4.5625-8.8288 13.116-16.426 8.5536-7.5969 16.55-12.56 17.859-11.085 1.3098 1.4748-4.5625 8.8288-13.116 16.426z&quot;
+        filter=&quot;url(#b)&quot; opacity=&quot;.54808&quot; stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m146.55 130.82c-0.70239-10.942-10.876-9.2279-10.876-9.2279l-27.135 41.354 3.3081 5.9555s35.405-27.14 34.703-38.082v3e-5z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m125.14 117c8.5536 7.5969 16.55 12.56 17.859 11.085 1.3098-1.4748-4.5625-8.8288-13.116-16.426-8.5536-7.5969-16.55-12.56-17.859-11.085-1.3098 1.4748 4.5625 8.8288 13.116 16.426z&quot;
+        filter=&quot;url(#b)&quot; opacity=&quot;.54808&quot; stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m51.988 74.692s14.415 17.143 24.394 16.071c9.9796-1.0714 20.329-8.5714 19.589-13.929-0.73923-5.3571 16.866 2.8571 16.866 2.8571s6.4495 11.429 11.105 15.357c2.4727 2.0867-8.0362 18.214-8.0362 18.214s-4.5227-7.0144-5.1931-5.3497c-7.2437 17.984-22.657 50.095-17.154 57.998 4.7157 6.7723-42.977 1.7603-42.977 1.7603 9.8284-22.663-12.917-54.815-14.158-59.888 0 0 1.5326-1.1295-5.3796 5.8368-1.4805 1.4921-11.031-15.357-11.031-15.357s9.9751-4.2857 16.828-20.357l15.146-3.2143v-6.1e-5z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m50.258 166.49c-0.5813-1.1995 48.173-2.4055 45.637 0-5.6648 5.3748-9.9369 13.418-15.812 21.568-4.4765 2.3502-8.9531 1.5652-13.43 0.38849-7.2687-17.08-14.251-17.531-16.396-21.957z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m81.464 177.49c0 5.6138-3.8159 10.165-8.5232 10.165-4.7072 0-8.5232-4.5509-8.5232-10.165s3.816-10.165 8.5232-10.165c4.7072 0 8.5232 4.5509 8.5232 10.165z&quot;
+        filter=&quot;url(#c)&quot; stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m67.644 181.15c-0.12726 1.2675-0.58893 7.3753 7.556 6.4745 2.901-0.32086 5.0615-2.6568 5.0615-6.2899 0-9.8345-0.20319-14.736-0.20319-14.736&quot;
+        stroke=&quot;#000&quot; stroke-dasharray=&quot;4.18484951, 1.04621238&quot; stroke-width=&quot;1.0462&quot; />
+      <path d=&quot;m79.991 186.04c3.9193-7.455 7.1667-13.986 14.038-18.663&quot; stroke=&quot;#000&quot;
+        stroke-dasharray=&quot;4.18484951, 1.04621238&quot; stroke-width=&quot;1.0462&quot; />
+      <path d=&quot;m66.662 185.88c-1.7544-10.631-9.8827-13.64-15.159-18.663&quot; stroke=&quot;#000&quot;
+        stroke-dasharray=&quot;4.18484951, 1.04621238&quot; stroke-width=&quot;1.0462&quot; />
+      <path d=&quot;m85.887 213.73 23.271 0.7644 5.1592 75.19-28.63-0.13312 0.19983-75.822v3e-5z&quot;
+        stroke-width=&quot;0&quot; />
+      <path
+        d=&quot;m127.66 150.32c5.5904-7.0652 9.0979-13.555 7.8342-14.495-1.2637-0.94047-6.82 4.0246-12.41 11.09-5.5904 7.0652-9.0978 13.555-7.8341 14.496 1.2637 0.94047 6.82-4.0246 12.41-11.09z&quot;
+        filter=&quot;url(#b)&quot; opacity=&quot;.54808&quot; stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m98.34 177.58c-3.5569-3.6226-6.0251-8.294-4.6952-11.345 1.1842-2.7169 4.5644-4.3068 8.2529-5.5964 7.4352-2.5995 10.578-0.1094 13.177 7.3258 0.90197 4.619-12.495 12.423-16.735 9.6159z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m47.058 174.81c3.8174-3.347 6.6273-7.8212 5.5287-10.963-0.97815-2.7977-4.2303-4.6354-7.8123-6.1967-7.2205-3.1471-10.54-0.89846-13.687 6.3221-1.2442 4.5388 11.533 13.321 15.971 10.838z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m101.02 113.41c-1.4005 8.0312-10.098 11.211-17.308 7.3128-5.7908-3.1309-10.8-13.875-8.9424-7.3128 1.5825 5.5888-2.3873 6.6157-3.5214 6.712-15.173 1.2892-23.275 10.274-25.759-6.712-1.1159-7.6288-16.491-24.668-4.7454-27.457 4.396-1.0436 23.015 12.939 32.511 11.294 13.012-2.2532 27.316-12.292 32.892-12.088 13.339 0.48917 2.9559 16.665-5.1263 28.25h1e-5z&quot;
+        filter=&quot;url(#j)&quot; stroke-width=&quot;0&quot; />
+      <path
+        d=&quot;m52.928 74.769s8.8478 14.348 21.62 13.89c4.8502-0.17236-11.688 9.8029-10.751 10.607 1.1307 0.9697 14.023-9.5964 14.023-9.5964s11.682 10.669 12.621 9.5964c0.87979-1.005-13.938-10.352-9.349-11.238 6.9099-1.3343 12.621-15.026 12.621-15.026s-9.7724 12.814-16.711 13.637c-8.7678 1.0404-24.074-11.869-24.074-11.869v3.1e-5z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m80.371 88.218c0 1.0602-1.0593 1.9196-2.3661 1.9196-1.3067 0-2.3661-0.85945-2.3661-1.9196 0-1.0602 1.0593-1.9196 2.3661-1.9196 1.3067 0 2.3661 0.85945 2.3661 1.9196z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m227.51 98.084c3e-5 17.653-7.6751 31.964-17.143 31.964-9.4677 0-17.143-14.311-17.143-31.964-3e-5 -17.653 7.6751-31.964 17.143-31.964 9.4678 0 17.143 14.311 17.143 31.964h3e-5z&quot;
+        filter=&quot;url(#g)&quot; stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m81.464 177.49c0 5.6138-3.8159 10.165-8.5232 10.165-4.7072 0-8.5232-4.5509-8.5232-10.165s3.816-10.165 8.5232-10.165c4.7072 0 8.5232 4.5509 8.5232 10.165z&quot;
+        filter=&quot;url(#c)&quot; opacity=&quot;.54808&quot; stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m20.226 149.61c-5.5904-7.0652-9.0979-13.555-7.8342-14.495 1.2637-0.94048 6.82 4.0246 12.41 11.09 5.5904 7.0651 9.0978 13.555 7.8341 14.495-1.2637 0.94048-6.82-4.0246-12.41-11.09h4e-6z&quot;
+        filter=&quot;url(#b)&quot; opacity=&quot;.54808&quot; stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m53.645 252.36c0.0925 15.459-3.0668 28.588-7.0565 29.325-3.9897 0.73627-7.2989-11.199-7.3914-26.658-0.0925-15.459 3.0668-28.588 7.0564-29.325 3.9897-0.73628 7.2989 11.199 7.3914 26.658v1e-5z&quot;
+        filter=&quot;url(#a)&quot; opacity=&quot;.54808&quot; stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m86.032 197.78c4.3262 13.599 11.065 24.104 15.052 23.464 3.9867-0.64052 3.7114-12.184-0.61481-25.783-4.3262-13.599-11.065-24.104-15.052-23.464-3.9867 0.6405-3.7114 12.184 0.61481 25.783z&quot;
+        filter=&quot;url(#a)&quot; opacity=&quot;.54808&quot; stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m94.613 255.39c-0.0925 15.459 3.0668 28.588 7.0565 29.325 3.9897 0.7363 7.2989-11.199 7.3914-26.658 0.0925-15.459-3.0668-28.588-7.0564-29.325-3.9897-0.73628-7.2989 11.199-7.3914 26.658v1e-5z&quot;
+        filter=&quot;url(#a)&quot; opacity=&quot;.54808&quot; stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m115.33 288.38c0 6.1368-7.3851 4.326-15.614 4.326-8.2289 0-14.185 1.8108-14.185-4.326s0.24228-10.04 17.043-5.7545c7.9735 2.034 12.757-0.38232 12.757 5.7545h-3e-5z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m60.328 288.52c0 6.1368-7.5622 4.326-15.988 4.326-8.4261 0-14.525 1.8108-14.525-4.326s0.24809-10.04 17.451-5.7546c8.1647 2.0341 13.063-0.38221 13.063 5.7546z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m111.7 288.42c0 2.2871-5.2513 1.6123-11.103 1.6123-5.8513 0-10.087 0.67487-10.087-1.6123s0.17226-3.7419 12.118-2.1447c5.6697 0.75808 9.071-0.14246 9.071 2.1447h2e-5z&quot;
+        filter=&quot;url(#e)&quot; stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m54.971 288.27c0 2.1643-5.3494 1.5256-11.31 1.5256-5.9606 0-10.275 0.63867-10.275-1.5256 0-2.1643 0.17549-3.5409 12.345-2.0295 5.7756 0.71741 9.2404-0.13482 9.2404 2.0295z&quot;
+        filter=&quot;url(#f)&quot; stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m54.864 42.292 6.1149 8.6494 7.5525-2.3529s-6.2699-3.0363-8.6098-5.8115c-1.0703-1.2694-0.48761-3.4601-0.67963-5.0671-0.62283-5.2123-0.13116-10.121 6.7356-13.896l11.909-0.61054s3.2668-0.35864 4.1671 1.0819c0.90036 1.4406-4.11 2.58-4.11 2.58 0.06 0 4.6575 0.29971 6.016-1.6668 0.87598-1.2681-0.1138-5.0548-0.86157-5.0548 7.6948 2.0927 1.2081-7.2626 8.4904 0.90784 1.8007 1.6206 1.6252 3.4243 1.6252 3.4243l1.8007 2.521s-2.1609-19.448-24.13-14.046c-21.969 5.4022-18.726 20.908-18.726 20.908l2.7056 8.4334 3.1e-5 6.1e-5z&quot;
+        stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m85.482 20.196c-0.21223 0.71253-3.3723-0.51432-3.9431 0.64492-0.41602 0.845 0.45606 2.1323-0.20563 2.611-0.53284 0.38547-2.1553-3.7216-2.7381-3.346-2.905 1.8722-6.0592 2.0577-7.897 2.0577-2.462 0-3.6555 2.1072-5.3396 1.1138-0.44664-0.26346-3.661 1.9328-5.2406 2.9736-0.60786 0.40049-4.8062 8.2142-5.9874 8.8461-1.6078 0.86008-0.10704-4.8796-0.133-5.1018-0.32276-2.7612 8.8307-11.236 9.4887-11.48 1.939-0.71674 5.4451-1.0058 7.3904-1.8905 2.7168-1.2356 9.6646-2.1329 12.725 0.40945 1.2978 1.0781 1.8801 2.338 1.8801 3.1615z&quot;
+        filter=&quot;url(#d)&quot; opacity=&quot;.87019&quot; stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m78.43 34.347c0 0.74966-0.60773 1.3574-1.3574 1.3574-0.74967 0-1.3574-0.60774-1.3574-1.3574 0-0.74966 0.60772-1.3574 1.3574-1.3574 0.74966 0 1.3574 0.60773 1.3574 1.3574z&quot;
+        opacity=&quot;.87019&quot; stroke=&quot;#000&quot; />
+      <path
+        d=&quot;m93.341 31.311c0 0.74966-0.60773 1.3574-1.3574 1.3574-0.74967 0-1.3574-0.60774-1.3574-1.3574 0-0.74966 0.60772-1.3574 1.3574-1.3574 0.74966 0 1.3574 0.60773 1.3574 1.3574z&quot;
+        opacity=&quot;.87019&quot; stroke=&quot;#000&quot; />
+    </g>
+  </g>
+</svg>
+"><input type="hidden" name="project[files][src/assets/images/ng-logo.svg]" value="<?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version=&quot;1.1&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;
+  xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot;
+  viewBox=&quot;0 0 250 250&quot; style=&quot;enable-background:new 0 0 250 250;&quot; xml:space=&quot;preserve&quot;>
+<style type=&quot;text/css&quot;>
+	.st0{fill:#DD0031;}
+	.st1{fill:#C3002F;}
+	.st2{fill:#FFFFFF;}
+</style>
+<g>
+	<polygon class=&quot;st0&quot; points=&quot;125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2 	&quot;/>
+	<polygon class=&quot;st1&quot; points=&quot;125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30 	&quot;/>
+	<path class=&quot;st2&quot; d=&quot;M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1
+		L125,52.1z M142,135.4H108l17-40.9L142,135.4z&quot;/>
+</g>
+</svg>
+"><input type="hidden" name="project[files][src/assets/images/villain.svg]" value="<?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot;
+   xmlns:cc=&quot;http://creativecommons.org/ns#&quot;
+   xmlns:rdf=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;
+   xmlns:svg=&quot;http://www.w3.org/2000/svg&quot;
+   xmlns=&quot;http://www.w3.org/2000/svg&quot;
+   xmlns:sodipodi=&quot;http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd&quot;
+   xmlns:inkscape=&quot;http://www.inkscape.org/namespaces/inkscape&quot;
+   width=&quot;210mm&quot;
+   height=&quot;297mm&quot;
+   id=&quot;svg2&quot;
+   version=&quot;1.1&quot;
+   inkscape:version=&quot;0.47 r22583&quot;
+   sodipodi:docname=&quot;Novo documento 1&quot;>
+  <defs
+     id=&quot;defs4&quot;>
+    <inkscape:perspective
+       sodipodi:type=&quot;inkscape:persp3d&quot;
+       inkscape:vp_x=&quot;0 : 526.18109 : 1&quot;
+       inkscape:vp_y=&quot;0 : 1000 : 0&quot;
+       inkscape:vp_z=&quot;744.09448 : 526.18109 : 1&quot;
+       inkscape:persp3d-origin=&quot;372.04724 : 350.78739 : 1&quot;
+       id=&quot;perspective10&quot; />
+    <inkscape:perspective
+       sodipodi:type=&quot;inkscape:persp3d&quot;
+       inkscape:vp_x=&quot;0 : 526.18109 : 1&quot;
+       inkscape:vp_y=&quot;0 : 1000 : 0&quot;
+       inkscape:vp_z=&quot;744.09448 : 526.18109 : 1&quot;
+       inkscape:persp3d-origin=&quot;372.04724 : 350.78739 : 1&quot;
+       id=&quot;perspective2390&quot; />
+    <inkscape:perspective
+       id=&quot;perspective10-4&quot;
+       inkscape:persp3d-origin=&quot;372.04724 : 350.78739 : 1&quot;
+       inkscape:vp_z=&quot;744.09448 : 526.18109 : 1&quot;
+       inkscape:vp_y=&quot;0 : 1000 : 0&quot;
+       inkscape:vp_x=&quot;0 : 526.18109 : 1&quot;
+       sodipodi:type=&quot;inkscape:persp3d&quot; />
+  </defs>
+  <sodipodi:namedview
+     id=&quot;base&quot;
+     pagecolor=&quot;#ffffff&quot;
+     bordercolor=&quot;#666666&quot;
+     borderopacity=&quot;1.0&quot;
+     inkscape:pageopacity=&quot;0.0&quot;
+     inkscape:pageshadow=&quot;2&quot;
+     inkscape:zoom=&quot;0.35&quot;
+     inkscape:cx=&quot;230&quot;
+     inkscape:cy=&quot;577.14286&quot;
+     inkscape:document-units=&quot;px&quot;
+     inkscape:current-layer=&quot;layer1&quot;
+     showgrid=&quot;false&quot;
+     inkscape:window-width=&quot;1131&quot;
+     inkscape:window-height=&quot;885&quot;
+     inkscape:window-x=&quot;22&quot;
+     inkscape:window-y=&quot;22&quot;
+     inkscape:window-maximized=&quot;0&quot; />
+  <metadata
+     id=&quot;metadata7&quot;>
+    <rdf:RDF>
+      <cc:Work
+         rdf:about=&quot;&quot;>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource=&quot;http://purl.org/dc/dcmitype/StillImage&quot; />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label=&quot;Camada 1&quot;
+     inkscape:groupmode=&quot;layer&quot;
+     id=&quot;layer1&quot;>
+    <g
+       inkscape:export-ydpi=&quot;121&quot;
+       inkscape:export-xdpi=&quot;121&quot;
+       id=&quot;g3165&quot;
+       transform=&quot;translate(759.0225,-8.5714414)&quot;>
+      <path
+         id=&quot;path2446&quot;
+         d=&quot;m -417.40283,71.922736 c 0,0 9.64286,-15 46.78571,-14.285714 37.14286,0.714285 46.07143,32.85714 46.07143,32.85714 l -2.14285,30.714288 -1.78572,9.28571 c 0,0 9.28572,-3.57143 11.42857,2.14286 2.14286,5.71429 -3.57143,15.71429 -3.57143,15.71429 l -21.07142,22.14285 -29.28572,36.07143 -18.57143,-1.07143 -28.21428,-43.57143 c 0,0 -10.35715,-40.35714 -10,-42.14285 0.35714,-1.78572 8.92857,-47.857144 10.35714,-47.857144 z&quot;
+         style=&quot;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none&quot; />
+      <g
+         id=&quot;g2437&quot;>
+        <path
+           style=&quot;fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1&quot;
+           d=&quot;m -331.83511,167.46855 c 0,0 -4.04061,-3.53553 -1.01015,-5.05076 3.03046,-1.51523 15.40483,-17.42513 15.40483,-25.00128 0,-7.57614 -6.31346,-4.29314 -13.63706,2.52539 -7.32361,6.81853 -9.09138,8.58629 -9.09138,13.38452 0,4.79822 0.75762,9.59645 -4.04061,15.15229 -4.79822,5.55583 -8.33375,6.06091 -8.83883,7.3236 -0.50508,1.26269 -2.02031,3.78807 -3.283,3.78807 -1.26269,0 -2.0203,-11.86929 -3.78807,-14.39467 -1.76777,-2.52538 -8.33376,-3.03046 -10.6066,-2.02031 -2.27284,1.01016 -6.81853,-1.01015 -7.32361,-3.03045 -0.50507,-2.02031 10.60661,-8.08122 10.60661,-10.35407 0,-2.27284 -6.31346,-8.33376 -5.55584,-10.6066 0.75761,-2.27284 -0.25254,-21.46574 -0.25254,-21.46574 l -0.50508,-12.37437 3.03046,0.25254 c 0,0 -1.76777,-3.78807 -4.54569,-3.78807 -2.77792,0 -4.29315,-5.555841 -9.59645,-7.828691 -5.3033,-2.27284 -4.04061,-10.859135 -6.31345,-12.626902 -2.27284,-1.767767 -19.1929,-13.889597 -21.97082,-12.879445 -2.77792,1.010153 -11.11168,11.869293 -13.38452,20.960667 -2.27284,9.09137 -3.28299,16.414981 -3.28299,16.414981 l -7.82869,5.55584 c 0,0 -2.27284,1.51523 -3.78807,0 -1.51523,-1.51523 -10.35406,-4.04061 -12.87944,-2.02031 -2.52539,2.02031 3.53553,12.12183 5.55584,14.89975 2.0203,2.77792 7.3236,14.14214 7.3236,15.65737 0,1.51522 0.75762,4.54568 -1.01015,6.56599 -1.76777,2.0203 -15.15229,19.44543 -15.15229,19.44543 0,0 -23.99112,11.61676 -34.09265,15.65737 -10.10152,4.04061 -18.94036,7.82868 -18.94036,7.82868 0,0 -16.92005,-0.25254 -20.20305,1.76777 -3.28299,2.0203 -15.9099,17.42513 -17.67767,36.87057 -1.76777,19.44543 0.75762,69.70052 0.75762,69.70052 0,0 -7.07107,40.4061 -7.57615,50.76017 -0.50507,10.35406 2.77792,19.69797 2.77792,19.69797 0,0 -4.79822,14.14214 -4.79822,17.42513 0,3.283 2.0203,21.46574 1.01015,30.30458 -1.01015,8.83883 -12.62691,50.00255 -12.62691,50.00255 l -10.10152,35.60788 c 0,0 -2.77792,25.25381 -6.81853,32.32488 -4.04061,7.07107 -13.13199,16.41498 -16.66752,22.22335 -3.53553,5.80838 -5.55584,15.65737 -5.55584,15.65737 l 5.55584,-5.05076 -0.50508,15.40482 7.57615,-1.51523 4.29315,30.30458 c 0,0 1.01015,7.57614 3.53553,12.12183 2.52538,4.54569 6.81853,9.09137 6.81853,9.09137 l -3.53553,-41.66879 c 0,0 -3.283,-19.95051 -2.02031,-22.22335 1.26269,-2.27285 6.81853,-4.04061 8.08122,-1.01016 1.26269,3.03046 11.36422,16.41498 19.95051,22.98097 8.5863,6.56599 13.13199,6.81853 18.43529,7.07107 5.3033,0.25254 9.34391,-2.27284 9.34391,-2.27284 0,0 -9.84899,-0.50508 -10.6066,-1.51523 -0.75762,-1.01015 -26.26397,-29.04189 -27.52666,-30.55712 -1.26269,-1.51522 -5.3033,-9.34391 -1.51523,-14.14213 3.78807,-4.79823 11.11168,-11.36422 11.11168,-11.36422 0,0 20.45559,-5.80837 25.25381,-6.81853 4.79823,-1.01015 12.37437,-5.3033 15.15229,-5.3033 2.77792,0 11.11168,2.02031 11.11168,2.02031 l -25.75889,102.0254 -20.20305,80.30713 -12.37437,42.42641 19.69797,3.53553 23.48605,12.12183 -5.05076,36.11296 -21.71828,154.3008 -4.79823,31.5673 98.74242,-21.46578 0,-8.33375 10.6066,-93.94419 12.12183,-63.38707 26.76904,-91.16627 2.27284,3.28299 -1.01015,37.62819 3.283,44.44671 -5.55584,54.2957 -3.283,50.76016 -2.52538,51.01271 1.01015,6.81853 93.94419,-20.45559 -1.51523,-9.34391 -0.50508,-24.74874 10.60661,-40.15356 3.03045,-18.94036 1.01016,-31.0622 4.79822,-2.27284 17.42513,-6.31345 45.45687,-26.26397 22.72843,-25.50635 -3.78807,-29.54696 c 0,0 -3.283,-21.71828 -3.283,-26.51651 0,-4.79822 -8.83883,-52.52793 -11.11168,-71.97336 -2.27284,-19.44544 -13.63706,-85.10536 -13.63706,-85.10536 l -21.46574,-101.52033 2.77792,0.75762 15.40483,23.48604 c 0,0 6.81853,9.09138 13.8896,14.39468 7.07106,5.3033 22.47589,6.81853 22.47589,6.81853 0,0 15.9099,3.03045 16.41498,4.29315 0.50508,1.26269 3.78807,9.59644 -6.81853,20.96066 -10.6066,11.36422 -13.63706,15.40483 -20.70813,18.68782 -7.07107,3.283 -19.44543,4.29315 -19.44543,4.29315 0,0 0.25253,5.05076 13.63706,3.283 13.38452,-1.76777 31.8198,-9.09138 39.39594,-23.73859 7.57615,-14.64721 7.32361,-26.5165 10.85914,-26.76904 3.53554,-0.25254 10.10153,10.6066 7.57615,21.97082 -2.52538,11.36421 -9.84899,19.44543 -9.84899,19.44543 0,0 -6.81853,7.07107 -13.8896,9.59645 -7.07106,2.52538 -13.13198,3.03046 -13.13198,3.03046 l 1.26269,1.01015 c 0,0 31.56727,-3.03045 38.89087,-15.15229 7.32361,-12.12183 11.11168,-22.47589 11.36422,-29.04188 0.25254,-6.56599 1.01015,-12.12183 1.01015,-12.12183 l 1.76777,-2.27284 c 0,0 4.29315,9.34391 4.04061,19.44543 -0.25254,10.10153 -7.07107,16.66752 -7.07107,16.66752 l 2.02031,0.75761 c 0,0 13.13198,-10.6066 13.63706,-22.98097 0.50507,-12.37437 0.75761,-26.26396 -7.07107,-33.08249 -7.82868,-6.81853 -14.89975,-12.87945 -14.89975,-12.87945 0,0 -11.36422,-11.86929 -14.39467,-11.86929 -3.03046,0 -17.42514,6.81853 -19.69798,5.80838 -2.27284,-1.01016 -20.45559,-31.31473 -23.23351,-40.15357 -2.77792,-8.83883 -7.57614,-31.06219 -7.57614,-31.06219 l -3.283,-11.61675 -13.13198,-30.55712 -1.01015,-13.13198 c 0,0 0.25253,-13.63706 -1.26269,-16.16244 -1.51523,-2.52538 -13.63706,-4.04061 -13.8896,-6.31345 -0.25254,-2.27285 8.58629,-20.96067 10.35406,-23.23351 1.76777,-2.27285 4.29315,-15.90991 3.283,-20.45559 -1.01015,-4.54569 -5.05077,-11.86929 -6.81853,-11.86929 -1.76777,0 -8.83884,3.03045 -11.36422,-0.25254 -2.52538,-3.283 -30.05204,-33.0825 -37.37564,-40.65864 -7.32361,-7.57615 -10.6066,-8.08122 -10.6066,-8.08122 l -2.02031,-6.31346 -15.15229,-17.42513 z&quot;
+           id=&quot;path2429&quot; />
+        <path
+           style=&quot;fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1&quot;
+           d=&quot;m -329.05719,105.84925 c 0,0 -10.6066,1.01015 -12.6269,0.25254 -2.02031,-0.75762 -9.09138,-2.52539 -13.8896,-2.27285 -4.79823,0.25254 -8.33376,2.27285 -8.33376,2.27285 l -4.04061,0 3.53553,4.04061 -2.0203,5.3033 0,11.86929 4.79822,7.07107 7.82868,6.31345 3.03046,-4.79822 2.77792,-2.77792 6.56599,0.75761 1.01016,-4.29315 0,-8.33376 4.29314,-7.3236 6.81853,-2.52538 0.25254,-5.55584 z&quot;
+           id=&quot;path2431&quot; />
+        <path
+           style=&quot;fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1&quot;
+           d=&quot;m -357.84654,122.26423 c 0,0 1.76777,4.29314 3.53554,5.3033 1.76777,1.01015 6.31345,2.0203 6.31345,0.50507 0,-1.51523 -3.03046,-7.3236 -3.03046,-7.3236 l -6.81853,1.51523 z&quot;
+           id=&quot;path2433&quot; />
+        <path
+           style=&quot;fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1&quot;
+           d=&quot;m -521.23871,494.00036 -0.50508,6.81853 c 0,0 4.79823,0 6.31346,5.05077 1.51523,5.05076 -3.78807,8.83883 1.51523,8.58629 5.3033,-0.25254 7.3236,2.27285 8.83883,-5.05076 1.51523,-7.32361 15.9099,-64.9023 15.9099,-64.9023 l 16.16244,-56.31601 -3.78807,-8.08122 -5.55584,-4.54568 -3.78807,0 -5.05076,11.61675 -5.55584,25.25382 -7.82868,32.32488 -8.33376,15.9099 -8.33376,33.33503 z&quot;
+           id=&quot;path2435&quot; />
+        <path
+           style=&quot;fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1&quot;
+           d=&quot;m -365.92776,183.37846 c 0,0 -12.12183,0 -13.63706,4.29314 -1.51522,4.29315 3.03046,8.08122 5.05077,8.08122 2.0203,0 14.89975,-5.80837 15.15229,-11.61675 0.25253,-5.80838 -6.06092,-11.11168 -7.32361,-11.61675 -1.26269,-0.50508 -8.08122,0.75761 -8.08122,0.75761 l -1.01015,1.26269 c 0,0 5.55584,3.283 9.84898,8.83884 z&quot;
+           id=&quot;path2427&quot; />
+      </g>
+    </g>
+  </g>
+</svg>
+"><input type="hidden" name="project[files][.angular-cli.1.json]" value="{
+  &quot;$schema&quot;: &quot;./node_modules/@angular/cli/lib/config/schema.json&quot;,
+  &quot;project&quot;: {
+    &quot;name&quot;: &quot;angular.io-example&quot;
+  },
+  &quot;apps&quot;: [
+    {
+      &quot;root&quot;: &quot;src&quot;,
+      &quot;outDir&quot;: &quot;dist&quot;,
+      &quot;assets&quot;: [
+        &quot;assets&quot;,
+        &quot;favicon.ico&quot;
+      ],
+      &quot;index&quot;: &quot;index.html&quot;,
+      &quot;main&quot;: &quot;main.ts&quot;,
+      &quot;polyfills&quot;: &quot;polyfills.ts&quot;,
+      &quot;test&quot;: &quot;test.ts&quot;,
+      &quot;tsconfig&quot;: &quot;tsconfig.app.json&quot;,
+      &quot;testTsconfig&quot;: &quot;tsconfig.spec.json&quot;,
+      &quot;prefix&quot;: &quot;app&quot;,
+      &quot;styles&quot;: [
+        &quot;styles.css&quot;
+      ],
+      &quot;scripts&quot;: [],
+      &quot;environmentSource&quot;: &quot;environments/environment.ts&quot;,
+      &quot;environments&quot;: {
+        &quot;dev&quot;: &quot;environments/environment.ts&quot;,
+        &quot;prod&quot;: &quot;environments/environment.prod.ts&quot;
+      }
+    }
+  ],
+  &quot;e2e&quot;: {
+    &quot;protractor&quot;: {
+      &quot;config&quot;: &quot;./protractor.conf.js&quot;
+    }
+  },
+  &quot;lint&quot;: [
+    {
+      &quot;project&quot;: &quot;src/tsconfig.app.json&quot;,
+      &quot;exclude&quot;: &quot;**/node_modules/**&quot;
+    },
+    {
+      &quot;project&quot;: &quot;src/tsconfig.spec.json&quot;,
+      &quot;exclude&quot;: &quot;**/node_modules/**&quot;
+    },
+    {
+      &quot;project&quot;: &quot;e2e/tsconfig.e2e.json&quot;,
+      &quot;exclude&quot;: &quot;**/node_modules/**&quot;
+    }
+  ],
+  &quot;test&quot;: {
+    &quot;karma&quot;: {
+      &quot;config&quot;: &quot;./karma.conf.js&quot;
+    }
+  },
+  &quot;defaults&quot;: {
+    &quot;styleExt&quot;: &quot;css&quot;,
+    &quot;component&quot;: {}
+  }
+}
+"><input type="hidden" name="project[tags][0]" value="angular"><input type="hidden" name="project[tags][1]" value="example"><input type="hidden" name="project[tags][2]" value="cookbook"><input type="hidden" name="project[tags][3]" value="angularjs"><input type="hidden" name="project[description]" value="Angular Example - AngularJS to Angular Quick Reference"><input type="hidden" name="project[template]" value="node"><input type="hidden" name="project[files][.stackblitzrc]" value="{&quot;installDependencies&quot;:true,&quot;startCommand&quot;:&quot;turbo start&quot;,&quot;env&quot;:{&quot;ENABLE_CJS_IMPORTS&quot;:true}}"></form>
+        <script>
+          var embedded = 'ctl=1';
+          var isEmbedded = window.location.search.indexOf(embedded) > -1;
+
+          if (isEmbedded) {
+            var form = document.getElementById('mainForm');
+            var action = form.action;
+            var actionHasParams = action.indexOf('?') > -1;
+            var symbol = actionHasParams ? '&' : '?'
+            form.action = form.action + symbol + embedded;
+          }
+          document.getElementById("mainForm").submit();
+        </script>
+      </body></html>
